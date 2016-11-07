@@ -19,12 +19,16 @@ For each test case, display YES or NO that indicates if Adam can reach (x,y) or 
 
 Sample Input
 
-3
-1 1 2 3
-2 1 2 3
-3 3 1 1
-Sample Output
+ 3
+ 1 1 2 3
+ 
+ 2 1 2 3
+ 
+ 3 3 1 1
+ Sample Output
 
-YES
-YES
-NO
+ YES
+
+ YES
+
+ NO
