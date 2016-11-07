@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner abu =new Scanner (System.in);
+        int count= abu.nextInt();
+        int c=0;
+        while(c<count)
+            {
+            
+            int a= abu.nextInt();
+            int b= abu.nextInt();
+            int x= abu.nextInt();
+            int y= abu.nextInt();
+            int result1=gcd(a,b);
+            int result2=gcd(x,y);
+            if(result1==result2)
+                {
+                System.out.println("YES");
+            }
+            else
+                {
+                System.out.println("NO");
+            }
+            c++;
+        }
+    }
+    
+    public static int gcd(int p,int q)
+        {
+        if(q==0)
+            {
+            return p;
+        }
+        else 
+            {
+            return gcd(q,p%q);
+        }
+    }
+}
